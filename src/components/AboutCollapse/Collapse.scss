@@ -1,0 +1,31 @@
+.collapse-container {
+    width: 956px;
+    height: 32px;
+    background-color: #FF6060;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    margin: 10px 0 20px 300px;
+    border-radius: 5px;
+  }
+  
+  .open {
+    height: auto;
+  }
+  
+  .collapse-header {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+  }
+  
+  .collapse-title {
+    color: #fff;
+  }
+  
+  .collapse-content {
+    background-color: #f6f6f6;
+    padding: 10px;
+    color: #FF6060;
+  }
+  

@@ -1,0 +1,13 @@
+.card-container {
+    width: 1240px;
+    height: 829px;
+    background-color: #f6f6f6;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0px;
+    padding: 5px; 
+    margin: auto; 
+  }
+  

@@ -1,0 +1,123 @@
+.carousel-container {
+    position: relative;
+    width: 1240px;
+    height: 415px;
+    overflow: hidden;
+    border-radius: 25px;
+    margin: auto;
+    margin-top: 40px;
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .prev-button,
+  .next-button {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    font-size: 90px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  
+    &:hover {
+      color: #555;
+    }
+  
+    &.prev-button {
+      left: 10px;
+    }
+  
+    &.next-button {
+      right: 10px;
+    }
+  }
+
+  .slide-number {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .fiche-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    color: #FF6060;
+    margin-left: 140px;
+    margin-top: 40px;
+  }
+
+  .fiche-location {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FF6060;
+    margin-left: 140px;
+  }
+
+  .tags {
+    display: flex;
+    margin-left: 138px;
+  }
+  
+  .tag {
+    margin-right: 5px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #FF6060;
+    color: #fff;
+  }
+
+  .containeur-un {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 140px 0 0px;
+  }
+
+  .host-name {
+  font-family: Montserrat;
+  font-size: 18px;
+  color: #FF6060;
+  margin-top: -3px;
+  }
+
+  .containeur-deux {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .host-picture {
+    width: 64px;
+    height: 64px;
+    border-radius: 50px;
+    margin-top: -25px;
+  }
+
+  .containeur-trois {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 140px 0 0px;
+  }

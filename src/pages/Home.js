@@ -1,3 +1,14 @@
+import React from "react";
+import HomeBanner from "../components/HomeBanner/HomeBanner";
+import CardContainer from "../components/CardContainer/CardContainer";
+import Card from "../components/Card/Card";
+
 export default function Home() {
-  return <h1>Hello world !</h1>;
+  return (
+    <div>
+      <HomeBanner />
+      <CardContainer />
+      <Card />
+    </div>
+  );
 }

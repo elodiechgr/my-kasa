@@ -1,6 +1,5 @@
 import { Routes, Route, Outlet, Link } from "react-router-dom";
-import logo from "./logo.svg";
-import "./App.css";
+import "./App.scss";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Fiche from "./pages/Fiche";

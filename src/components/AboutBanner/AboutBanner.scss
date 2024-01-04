@@ -1,0 +1,27 @@
+.about-image-container {
+  display: flex;
+  justify-content: center;
+  height: 223px;
+  width: 1240px;
+  margin: 40px auto;
+  }
+  
+  .about-background-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url('../../assets/aboutbanner.png');
+    background-size : cover;
+    background-position : center;
+    border-radius: 25px;
+  }
+
+  h1 {
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: 500;
+    color: white;
+  }

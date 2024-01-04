@@ -1,0 +1,27 @@
+.fiche-collapse-container {
+    width: 582px;
+    height: 52px;
+    display: inline-block;
+    margin: 20px -60px 20px 140px;
+  }
+  
+  .fiche-collapse-title {
+    height: 52px;
+    background-color: #FF6060;
+    border-radius: 5px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    cursor: pointer;
+  }
+  
+  .fiche-collapse-content {
+    background-color: #f6f6f6; 
+    padding: 15px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    color: #FF6060;
+  }

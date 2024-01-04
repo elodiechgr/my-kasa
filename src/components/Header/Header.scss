@@ -1,0 +1,44 @@
+$primary-color: #FF6060;
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+}  
+
+nav {
+display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+
+  img {
+    width: 210px;
+    height: 68px;
+    margin: 15px 20px 0px 135px;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    margin-right: 140px;
+    margin-top: 15px;
+
+    a {
+      color: $primary-color;
+      text-decoration: none;
+      margin-right: 40px;
+
+      &:last-child {
+        margin-right: 0;
+    }
+
+    &:hover,
+    &:active {
+      text-decoration: underline;
+}
+}
+}
+}

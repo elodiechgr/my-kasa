@@ -1,0 +1,26 @@
+.star-rating {
+  display: inline-block;
+
+  .star {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 2px;
+
+    &.filled {
+      color: #FF6060;
+    }
+
+    &.half {
+      position: relative;
+
+      &:before {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background-color: #E3E3E3;
+      }
+    }
+  }
+}
