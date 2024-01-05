@@ -6,7 +6,7 @@ html, body {
 
 .footer-nav {
     background-color: #000;
-    height: 160px;
+    height: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,11 +18,27 @@ html, body {
       height: auto;
       max-width: 100%;
       max-height: 100%;
+      margin-left: 40px;
     }
   
     .text-footer {
       margin-top: 10px;
       color: #fff;
+      margin-bottom: -20px;
     }
   }
   
+
+  
+/* Small devices (phones, less than 375px) */
+
+@media only screen and (max-width: 375px) {
+
+  .text-footer {
+    margin-top: 10px;
+    color: #fff;
+    margin-bottom: -20px;
+    font-size: 12px;
+  }
+  
+}

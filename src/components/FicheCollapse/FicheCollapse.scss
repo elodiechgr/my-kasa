@@ -1,19 +1,28 @@
 .fiche-collapse-container {
-    width: 582px;
-    height: 52px;
-    display: inline-block;
-    margin: 20px -60px 20px 140px;
-  }
+  width: 582px;
+  display: inline-block;
+  align-items: flex-start;
+  margin: 20px -60px 20px 140px;
+  transition: height 0.3s ease;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.open {
+  height: auto;
+}
   
   .fiche-collapse-title {
+    display: flex;
+    justify-content: space-between;
     height: 52px;
     background-color: #FF6060;
     border-radius: 5px;
     color: #fff;
-    display: flex;
     align-items: center;
     padding: 0 15px;
     cursor: pointer;
+    font-size: 18px;
   }
   
   .fiche-collapse-content {
@@ -25,3 +34,45 @@
     text-align: left;
     color: #FF6060;
   }
+
+    /* Small devices (phones, less than 375px) */
+
+@media only screen and (max-width: 375px) {
+
+  .fiche-collapse-container {
+    width: 335px;
+    height: auto;
+    display: inline-block;
+    align-items: flex-start;
+    margin: 0px 20px 15px 20px;
+    transition: height 0.3s ease;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  
+  .open {
+    height: auto;
+  }
+    
+    .fiche-collapse-title {
+      display: flex;
+      height: 30px;
+      justify-content: space-between;
+      background-color: #FF6060;
+      border-radius: 5px;
+      color: #fff;
+      display: flex;
+      padding: 0 15px;
+      font-size: 13px;
+    }
+    
+    .fiche-collapse-content {
+      padding: 15px;
+      font-size: 12px;
+    }
+
+    .arrowback img {
+      width: 18px;
+      height: 18px;
+      }
+}

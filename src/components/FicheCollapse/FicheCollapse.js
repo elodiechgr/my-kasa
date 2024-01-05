@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Collapse from "react-collapse";
 import "./FicheCollapse.scss";
+import arrowUpImage from "../../assets/arrow-up.png";
+import arrowDownImage from "../../assets/arrow-down.png";
 
 const CollapseComponent = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,9 +12,15 @@ const CollapseComponent = ({ title, content }) => {
   };
 
   return (
-    <div className="fiche-collapse-container">
+    <div className={`fiche-collapse-container ${isOpen ? "open" : ""}`}>
       <div className="fiche-collapse-title" onClick={toggleCollapse}>
-        {title}
+        <div>{title}</div>
+        <div className="arrowback">
+          <img
+            src={isOpen ? arrowDownImage : arrowUpImage}
+            alt={isOpen ? "Arrow Down" : "Arrow Up"}
+          />
+        </div>
       </div>
       <Collapse isOpened={isOpen}>
         <div className="fiche-collapse-content">{content}</div>

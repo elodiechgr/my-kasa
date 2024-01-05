@@ -12,3 +12,20 @@
     margin-bottom: 40px;
   }
   
+/* Small devices (phones, less than 375px) */
+
+@media only screen and (max-width: 375px) {
+  
+    .card-container {
+      width: 90%;
+      height: auto;
+      grid-template-columns: 1fr;
+      background-color: #fff;
+      margin-bottom: 10px;
+    }
+  
+    .card {
+      margin: 10px auto;
+    }
+  }
+  

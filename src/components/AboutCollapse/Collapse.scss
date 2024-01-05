@@ -1,10 +1,10 @@
 .collapse-container {
-    width: 956px;
-    height: 32px;
+    width: 1023px;
+    height: 54px;
     background-color: #FF6060;
     overflow: hidden;
     transition: height 0.3s ease;
-    margin: 10px 0 20px 300px;
+    margin: 10px 0 20px 260px;
     border-radius: 5px;
   }
   
@@ -13,14 +13,16 @@
   }
   
   .collapse-header {
-    cursor: pointer;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 8px;
+    cursor: pointer;
+    margin: 8px 15px 0 15px;
   }
   
   .collapse-title {
     color: #fff;
+    font-size: 24px;
   }
   
   .collapse-content {
@@ -29,3 +31,43 @@
     color: #FF6060;
   }
   
+      /* Small devices (phones, less than 375px) */
+
+@media only screen and (max-width: 375px) {
+
+  .collapse-container {
+    width: 335px;
+    height: 30px;
+    display: inline-block;
+    align-items: flex-start;
+    margin: 0px 20px 15px 20px;
+    transition: height 0.3s ease;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  
+  .open {
+    height: auto;
+  }
+    
+    .collapse-title {
+      display: flex;
+      justify-content: space-between;
+      border-radius: 5px;
+      padding: 0 5px;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+    
+    .collapse-content {
+      padding: 15px;
+      font-size: 12px;
+    }
+
+    .arrowback img {
+      width: 25px;
+      height: 25px;
+      margin-bottom: 5px;
+      }
+
+}

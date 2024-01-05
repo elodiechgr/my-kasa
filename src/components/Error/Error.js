@@ -8,9 +8,9 @@ function Notfound() {
       <h2 class="error-oups">Oups! La page que vous demandez n'existe pas.</h2>
       <div>
         <ul class="error-link">
-          <li>
+          <ul>
             <a href="/">Retourner sur la page d’accueil</a>
-          </li>
+          </ul>
         </ul>
       </div>
     </div>
