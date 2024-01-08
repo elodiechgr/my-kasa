@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import "./Header.scss";
 
@@ -10,8 +10,12 @@ function Header() {
         <img src={logo} alt="Logo Kasa" />
       </Link>
       <div className="nav-links">
-        <Link to="/">Accueil</Link>
-        <Link to="/About">À propos</Link>
+        <NavLink to="/" end className="nav-link">
+          Accueil
+        </NavLink>
+        <NavLink to="/About" className="nav-link">
+          À propos
+        </NavLink>
       </div>
     </nav>
   );

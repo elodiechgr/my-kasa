@@ -8,7 +8,7 @@ html, body {
 }  
 
 nav {
-display: flex;
+  display: flex;
   justify-content: space-between; 
   align-items: center;
   background-color: white;
@@ -26,61 +26,65 @@ display: flex;
     margin-right: 140px;
     margin-top: 15px;
 
-    a {
+    .nav-link {
       color: $primary-color;
       text-decoration: none;
       margin-right: 40px;
-      font-size: 24px;
+      font-size: 22px;
 
       &:last-child {
         margin-right: 0;
-    }
-
-    &:hover,
-    &:active {
-      text-decoration: underline;
-}
-}
-}
-}
-
-/* Small devices (phones, less than 375px) */
-
-@media only screen and (max-width: 375px) {
-
-  nav {
-    display: flex;
-      justify-content: space-between; 
-      align-items: center;
-      background-color: white;
-      padding: 10px;
-    
-      img {
-        width: 145px;
-        height: 46px;
-        margin: 15px 20px 0px 15px;
       }
 
-.nav-links {
-  display: flex;
-  align-items: center;
-  margin-right: 5px;
-  margin-top: 15px;
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
 
-  a {
-    text-transform: uppercase;
-    font-size: 12px;
-    margin-right: 20px;
-
-    &:last-child {
-      margin-right: 0;
+      &.active {
+        text-decoration: underline;
+      }
+    }
   }
+}
 
-  &:hover,
-  &:active {
-    text-decoration: underline;
-}
-}
-}
-}
+/* Styles pour les petits écrans (moins de 375px) */
+
+@media only screen and (max-width: 375px) {
+  nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+
+    img {
+      width: 145px;
+      height: 46px;
+      margin: 15px 20px 0px 15px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      margin-right: 5px;
+      margin-top: 15px;
+
+      .nav-link {
+        text-transform: uppercase;
+        font-size: 12px;
+        margin-right: 20px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        &:hover,
+        &:focus,
+        &.active {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
 }

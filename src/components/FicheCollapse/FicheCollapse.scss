@@ -1,7 +1,6 @@
 .fiche-collapse-container {
   width: 582px;
-  display: inline-block;
-  align-items: flex-start;
+  display: inline-table;
   margin: 20px -60px 20px 140px;
   transition: height 0.3s ease;
   overflow: hidden;
@@ -28,7 +27,7 @@
   
   .fiche-collapse-content {
     background-color: #f6f6f6; 
-    padding: 15px;
+    padding: 15px 10px 15px 10px;
     font-family: Montserrat;
     font-size: 18px;
     font-weight: 400;
@@ -39,6 +38,8 @@
 
   .fiche-collapse-content ul {
     list-style: none;
+    margin-left: -30px;
+    margin-top: 0;
   }
 
     /* Small devices (phones, less than 375px) */
@@ -73,12 +74,13 @@
     }
     
     .fiche-collapse-content {
-      padding: 15px;
+      padding: 15px 10px 15px 10px;
       font-size: 12px;
     }
 
     .fiche-collapse-content ul {
       margin-left: auto;
+      margin-left: -40px;
     }
 
     .arrowback img {

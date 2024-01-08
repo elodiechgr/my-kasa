@@ -5,7 +5,7 @@ import "./Footer.scss";
 
 function Footer() {
   return (
-    <nav class="footer-nav">
+    <nav className="footer-nav">
       <Link to="/">
         <img src={logo} alt="Logo Kasa" />
       </Link>
