@@ -6,19 +6,17 @@ import StarRating from "../components/StarRating/StarRating";
 import { faStar, faStarHalf } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import jsonData from "../components/annonces.json";
+import NotFound from "./NotFound"; // Import du composant NotFound
 import "./Fiche.scss";
-import { useNavigate } from "react-router-dom";
 
 library.add(faStar, faStarHalf);
 
 export default function Fiche() {
   const { id } = useParams();
-  const navigate = useNavigate();
   const annonce = jsonData.find((data) => data.id === id);
 
   if (!annonce) {
-    navigate("/NotFound");
-    return null;
+    return <NotFound />;
   }
 
   return (

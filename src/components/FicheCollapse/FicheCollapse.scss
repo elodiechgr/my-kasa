@@ -10,6 +10,7 @@
 
 .open {
   height: auto;
+  transition: height 0.3s ease; 
 }
   
   .fiche-collapse-title {
@@ -33,6 +34,11 @@
     font-weight: 400;
     text-align: left;
     color: #FF6060;
+    list-style: none; 
+  }
+
+  .fiche-collapse-content ul {
+    list-style: none;
   }
 
     /* Small devices (phones, less than 375px) */
@@ -69,6 +75,10 @@
     .fiche-collapse-content {
       padding: 15px;
       font-size: 12px;
+    }
+
+    .fiche-collapse-content ul {
+      margin-left: auto;
     }
 
     .arrowback img {
