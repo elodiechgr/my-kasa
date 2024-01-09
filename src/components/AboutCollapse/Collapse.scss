@@ -1,10 +1,16 @@
+.collapse-center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .collapse-container {
     width: 1023px;
     height: 54px;
     background-color: #FF6060;
     overflow: hidden;
     transition: height 0.3s ease;
-    margin: 10px 0 20px 260px;
+    margin: 10px 0 20px 0;
     border-radius: 5px;
   }
   

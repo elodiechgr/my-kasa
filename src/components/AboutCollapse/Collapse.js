@@ -11,23 +11,25 @@ const Collapse = ({ title, content }) => {
   };
 
   return (
-    <div className={`collapse-container ${isOpen ? "open" : ""}`}>
-      <div className="collapse-header" onClick={toggleCollapse}>
-        <div className="collapse-title">{title}</div>
-        <div className="arrowback">
-          <img
-            src={isOpen ? arrowDownImage : arrowUpImage}
-            alt={isOpen ? "Arrow Down" : "Arrow Up"}
-          />
+    <div className="collapse-center">
+      <div className={`collapse-container ${isOpen ? "open" : ""}`}>
+        <div className="collapse-header" onClick={toggleCollapse}>
+          <div className="collapse-title">{title}</div>
+          <div className="arrowback">
+            <img
+              src={isOpen ? arrowDownImage : arrowUpImage}
+              alt={isOpen ? "Arrow Down" : "Arrow Up"}
+            />
+          </div>
         </div>
+        {isOpen && (
+          <div className="collapse-content">
+            {content.map((text, index) => (
+              <p key={index}>{text}</p>
+            ))}
+          </div>
+        )}
       </div>
-      {isOpen && (
-        <div className="collapse-content">
-          {content.map((text, index) => (
-            <p key={index}>{text}</p>
-          ))}
-        </div>
-      )}
     </div>
   );
 };

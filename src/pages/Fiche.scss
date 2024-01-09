@@ -64,6 +64,13 @@
     margin: 0 140px 0 0px;
   }
 
+  .collapse-view {
+    display: flex;
+    justify-content: space-around; 
+    margin-left: -10px;   
+    margin-right: 200px;
+  }
+
   .desktop-view {
   display: block;
   }
@@ -72,7 +79,7 @@
   display: none; 
   }
 
-  /* Small devices (phones, less than 375px) */
+    /* Small devices (phones, less than 375px) */
 
 @media only screen and (max-width: 375px) {
 

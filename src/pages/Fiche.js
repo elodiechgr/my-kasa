@@ -46,7 +46,7 @@ export default function Fiche() {
           </div>
           <StarRating rating={annonce.rating} />
         </div>
-        <div>
+        <div className="collapse-view">
           <FicheCollapse title="Description" content={annonce.description} />
           <FicheCollapse
             title="Équipements"
