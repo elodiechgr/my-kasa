@@ -11,10 +11,47 @@
     margin: auto; 
     margin-bottom: 40px;
   }
-  
-/* Small devices (phones, less than 375px) */
 
-@media only screen and (max-width: 375px) {
+   /* Large devices (tablets, less than 992px) */
+
+@media only screen and (max-width: 992px) {
+  
+  .card-container {
+    width: 90%;
+    height: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: #fff;
+    margin-bottom: 10px;
+  }
+
+  .card {
+    margin: 10px auto;
+  }
+}
+
+ /* Medium devices (phones, less than 768px) */
+
+@media only screen and (max-width: 768px) {
+  
+  .card-container {
+    width: 90%;
+    height: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: #fff;
+    margin-bottom: 10px;
+  }
+
+  .card {
+    margin: 10px auto;
+  }
+}
+  
+  
+/* XSmall devices (phones, less than 375px) */
+
+@media only screen and (max-width: 576px) {
   
     .card-container {
       width: 90%;

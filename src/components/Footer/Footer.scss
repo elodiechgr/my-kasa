@@ -27,8 +27,37 @@ html, body {
       margin-bottom: -20px;
     }
   }
-  
 
+/* Large devices (phones, less than 992px) */
+
+@media only screen and (max-width: 992px) {
+
+  .footer-nav {
+    height: 150px;
+    width: auto;
+  }
+
+  .text-footer {
+    margin-top: 10px;
+    color: #fff;
+    margin-bottom: -20px;
+    font-size: 12px;
+  }
+  
+}
+  
+/* Medium devices (phones, less than 768px) */
+
+@media only screen and (max-width: 768px) {
+
+  .text-footer {
+    margin-top: 10px;
+    color: #fff;
+    margin-bottom: -20px;
+    font-size: 12px;
+  }
+  
+}
   
 /* Small devices (phones, less than 375px) */
 

@@ -64,6 +64,41 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+/* Large devices (tablets, less than 992px) */
+
+@media only screen and (max-width: 992px) {
+    
+  .carousel-container{
+  width: auto;
+  height: 300px;
+  margin: auto;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.prev-button,
+.next-button {
+  top: 45%;
+  font-size: 45px;
+}
+
+/* Medium devices (phones, less than 768px) */
+
+@media only screen and (max-width: 768px) {
+    
+  .carousel-container{
+  width: auto;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.prev-button,
+.next-button {
+  top: 45%;
+  font-size: 50px;
+}
+
 /* Small devices (phones, less than 375px) */
 
 @media only screen and (max-width: 375px) {
@@ -90,5 +125,6 @@
   display: block;
   margin: 0 auto;
 }
-
+}
+}
 }
