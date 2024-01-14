@@ -12,10 +12,13 @@ const CollapseComponent = ({ title, content }) => {
   };
 
   return (
-    <div className={`fiche-collapse-container ${isOpen ? "open" : ""}`}>
-      <div className="fiche-collapse-title" onClick={toggleCollapse}>
+    <div className="fiche-collapse-container">
+      <div
+        className={`fiche-collapse-title ${isOpen ? "open" : ""}`}
+        onClick={toggleCollapse}
+      >
         <div>{title}</div>
-        <div className="arrowback">
+        <div className={`arrowback ${isOpen ? "rotate" : ""}`}>
           <img
             src={isOpen ? arrowDownImage : arrowUpImage}
             alt={isOpen ? "Arrow Down" : "Arrow Up"}
