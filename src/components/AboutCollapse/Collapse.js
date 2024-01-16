@@ -15,7 +15,7 @@ const Collapse = ({ title, content }) => {
       <div className={`collapse-container ${isOpen ? "open" : ""}`}>
         <div className="collapse-header" onClick={toggleCollapse}>
           <div className="collapse-title">{title}</div>
-          <div className="arrowback">
+          <div className={`arrowback ${isOpen ? "rotate" : ""}`}>
             <img
               src={isOpen ? arrowDownImage : arrowUpImage}
               alt={isOpen ? "Arrow Down" : "Arrow Up"}
