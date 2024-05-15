@@ -6,7 +6,7 @@ import StarRating from "../components/StarRating/StarRating";
 import { faStar, faStarHalf } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import jsonData from "../components/annonces.json";
-import NotFound from "./NotFound"; // Import du composant NotFound
+import NotFound from "./NotFound";
 import "./Fiche.scss";
 
 library.add(faStar, faStarHalf);

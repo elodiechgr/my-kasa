@@ -10,7 +10,7 @@ function Footer() {
         <img src={logo} alt="Logo Kasa" />
       </Link>
       <div className="text-footer">
-        <p>© 2020 Kasa. All rights reserved</p>
+        <p>© 2020 My Kasa. All rights reserved</p>
       </div>
     </nav>
   );
